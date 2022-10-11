@@ -25,7 +25,23 @@ main{
     width: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    min-height: inherit;
+    justify-content: space-between;
+    flex-direction: column;
+
+    
+}
+#lft h3{
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    margin-top: 10vh;
+    letter-spacing: .1em;
+    color: #009C86;
+    width: 100%;
+
+
+
+
 }
 #rt{
     width: 50%;
@@ -37,6 +53,9 @@ main{
 }
 
 #heading{
+    /* background-color: yellow; */
+    height: 60vh;
+    width: 100%;
 }
 #heading h4{
     font-family: 'Montserrat', sans-serif;
@@ -65,9 +84,17 @@ main{
     }
     #lft{
         width: 100%;
+        min-height: initial;
+    }
+    #lft h3{
+        margin-top:0;
     }
     #rt{
         width: 100%;
+    }
+    #heading{
+        height: fit-content;
+        margin-top: 6vh;
     }
     #heading h1{
         font-size: 3em;
